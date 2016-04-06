@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swift_pdf_reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBd-Og-0NX">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KBd-Og-0NX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4KR-nG-MGZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KBd-Og-0NX" secondAttribute="bottom" id="4tE-vD-1QL"/>
+                            <constraint firstItem="KBd-Og-0NX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5WN-S2-qOO"/>
+                            <constraint firstItem="KBd-Og-0NX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="63p-ah-9sP"/>
+                            <constraint firstItem="KBd-Og-0NX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CEY-yX-VJG"/>
+                            <constraint firstItem="KBd-Og-0NX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Etv-hn-Lor"/>
+                            <constraint firstAttribute="trailing" secondItem="KBd-Og-0NX" secondAttribute="trailing" id="hOS-iG-kZS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KBd-Og-0NX" secondAttribute="bottom" id="ldp-n6-1YJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4KR-nG-MGZ"/>
+                                <exclude reference="5WN-S2-qOO"/>
+                                <exclude reference="CEY-yX-VJG"/>
+                                <exclude reference="4tE-vD-1QL"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="KBd-Og-0NX" id="ZDd-0c-NNV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="433"/>
+        </scene>
+    </scenes>
+</document>
